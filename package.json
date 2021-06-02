@@ -1,0 +1,11 @@
+{
+  "name": "projet_reservia_oc",
+  "version": "1.0.0",
+  "description": "Intégrer la maquette ordinateur et mobile du site Reservia",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "Boris",
+  "license": "ISC"
+}
