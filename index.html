@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/bbb7eee451.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Projet Reservia</title>
 </head>
@@ -13,18 +14,52 @@
        </div>
        <nav>
            <ul>
-               <li>S'inscrire</li>
-               <li>Hébergements</li>
+               <li>
+                   <a href="">Hébergements</a>
+               </li>
+               <li>
+                   <a href="">Activités</a>
+               </li>
            </ul>
        </nav>
-        <a href="">S'inscrire</a>
+        <a class="signUp" href="">S'inscrire</a>
     </header>
 
     <div class="container">
         <section>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <input>
+
+            <div class="findAccommodation">
+                <div class="findAccommodation__beforeInput">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <input type="search" class="findAccommodation__input" id="findAccommodation" name="findAccommodation" required size="20" placeholder="Marseille, France">
+
+                <div class="findAccommodation__searchButton">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="filters">
+                <h2>Filtres</h2>
+                <ul>
+                    <li class="btnFilter btnFilterEco">Économique</li>
+                    <li class="btnFilter btnFilterFamily">Famille</li>
+                    <li class="btnFilter btnFilterRomantic">Romantique</li>
+                    <li class="btnFilter btnFilterAnimalsAllowed">Animaux autorisés</li>
+                </ul>
+            </div>
+
+            <div class="infoAvailableAccommodationCity">
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logement sont disponible dans cette ville</p>
+            </div>
+
+
+
+
         </section>
     </div>
 
