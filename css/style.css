@@ -42,7 +42,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1340px;
   }
 }
 
@@ -270,10 +270,35 @@ header ul li a:hover {
   color: #0065fc;
 }
 
+@media (min-width: 768px) {
+  header nav {
+    order: initial;
+    width: auto;
+  }
+  header .signUp {
+    padding-top: 1rem;
+  }
+  header ul li {
+    padding: 1rem 1.5rem 0 0;
+    width: auto;
+    border-bottom: none;
+    text-align: center;
+  }
+  header ul li:hover {
+    border-top: 3px solid #0065fc;
+    border-bottom: none;
+  }
+}
 footer {
   background-color: #f2f2f2;
   padding-bottom: 1rem;
   padding-top: 1rem;
+}
+@media (min-width: 768px) {
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .signUp {
@@ -322,10 +347,90 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 50px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
-
+}
+@media screen and (min-width: 1200px) and (max-width: 992px) {
+  .accommodationResults {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .accommodationResults {
+    max-width: 1340px;
+  }
+}
+@media (min-width: 1200px) {
+  .mostPopular, .accommodationCity {
+    border-radius: 25px;
+  }
+}
+@media (min-width: 1200px) {
   .accommodationCity {
     grid-row: 1;
+    background-color: #f2f2f2;
+  }
+  .accommodationCity .container-grid-accommodationCity {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .activityCity .container-grid-activityCity {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 225px);
+    grid-gap: 2rem;
+  }
+  .activityCity .vieuxPort img, .activityCity .calanques img {
+    height: 100%;
+  }
+  .activityCity .vieuxPort {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr 1fr;
+  }
+  .activityCity .pomegues {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .activityCity .frioul {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .activityCity .calanques {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr 1fr;
+  }
+  .activityCity .dameDeLaGarde {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .activityCity .longchamp {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
 
