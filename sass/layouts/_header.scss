@@ -47,3 +47,30 @@ header {
 
     }
 }
+
+@media (min-width: 768px) {
+    header {
+        nav {
+            order: initial;
+            width: auto;
+        }
+
+        .signUp {
+            padding-top: 1rem;
+        }
+
+
+        ul {
+            li {
+                padding: 1rem 1.5rem 0 0;
+                width: auto;
+                border-bottom: none;
+                text-align: center;
+                &:hover {
+                    border-top: 3px solid $reservia_blue;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
