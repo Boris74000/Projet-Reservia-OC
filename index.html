@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/bbb7eee451.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Projet Reservia</title>
 </head>
@@ -15,22 +18,22 @@
        <nav>
            <ul>
                <li>
-                   <a href="">Hébergements</a>
+                   <a href="#accommodationCityAnchor">Hébergements</a>
                </li>
                <li>
-                   <a href="">Activités</a>
+                   <a href="#activityCityAnchor">Activités</a>
                </li>
            </ul>
        </nav>
         <a class="signUp" href="">S'inscrire</a>
     </header>
 
-    <div class="container">
+    <div>
 
         <!------------------------------->
         <!-- Trouver votre hebergement -->
         <!------------------------------->
-        <section>
+        <section class="container">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
@@ -67,159 +70,186 @@
         <!-- Résultat hébergement Marseille -->
         <!------------------------------------>
         <section class="accommodationResults">
-            <div>
-                <div>
-                    <h2>Les plus populaires</h2>
-                    <i class="fas fa-chart-line"></i>
-                </div>
 
-                <div>
-                    <div>
-                        <img src="img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre hotel le soleil du matin">
-                    </div>
-                    <div>
-                        <h3>Hôtel Le soleil du matin</h3>
-                        <p>Nuit à partir de 128€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="mostPopular">
+                <div class="container">
 
-                <div>
                     <div>
-                        <img src="img/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre au coeur de l'eau">
+                        <h2>Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <div>
-                        <h3>Au coeur de l'eau Chambres d'hpotes</h3>
-                        <p>Nuit à partir de 71€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star empty"></i>
-                        </div>
-                    </div>
-                </div>
 
-                <div>
-                    <div>
-                        <img src="img/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre hotel tout bleu et blanc">
-                    </div>
-                    <div>
-                        <h3>Hôtel Tout bleu et Blanc</h3>
-                        <p>Nuit à partir de 68€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star empty"></i>
+<!--                    <div>-->
+
+                        <div class="cardsImgLeft">
+                            <div>
+                                <img src="img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre hotel le soleil du matin">
+                            </div>
+                            <div>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                                <div class="stars">
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="cardsImgLeft">
+                            <div>
+                                <img src="img/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre au coeur de l'eau">
+                            </div>
+                            <div>
+                                <h3>Au coeur de l'eau Chambres d'hpotes</h3>
+                                <p>Nuit à partir de 71€</p>
+                                <div class="stars">
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star empty"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cardsImgLeft">
+                            <div>
+                                <img src="img/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre hotel tout bleu et blanc">
+                            </div>
+                            <div>
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de 68€</p>
+                                <div class="stars">
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star full"></i>
+                                    <i class="fa fa-star empty"></i>
+                                </div>
+                            </div>
+                        </div>
+
+<!--                    </div>-->
+
                 </div>
 
             </div>
 
-            <div>
+            <div class="accommodationCity container" id="accommodationCityAnchor">
                 <div>
                     <h2>Hébergement à Marseille</h2>
                 </div>
 
                 <div>
-                    <div>
+                    <div class="cardsImgTop">
                         <div>
                             <img src="img/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebiere">
                         </div>
-                        <h3>Auberge la Cannebière</h3>
-                        <p>Nuit à partir de 25€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star empty"></i>
+                        <div>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <div class="stars">
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star empty"></i>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div>
+                    <div class="cardsImgTop">
                         <div>
                             <img src="img/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port">
                         </div>
-                        <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de 52€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star empty"></i>
+                        <div>
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de 52€</p>
+                            <div class="stars">
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star empty"></i>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div>
+                    <div class="cardsImgTop">
                         <div>
                             <img src="img/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes">
                         </div>
-                        <h3>Hôtel les mouettes</h3>
-                        <p>Nuit à partir de 76€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star empty"></i>
+                        <div>
+                            <h3>Hôtel les mouettes</h3>
+                            <p>Nuit à partir de 76€</p>
+                            <div class="stars">
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star empty"></i>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div>
+                    <div class="cardsImgTop">
                         <div>
                             <img src="img/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer">
                         </div>
-                        <h3>Hôtel de La mer</h3>
-                        <p>Nuit à partir de 46€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star empty"></i>
+                        <div>
+                            <h3>Hôtel de La mer</h3>
+                            <p>Nuit à partir de 46€</p>
+                            <div class="stars">
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star empty"></i>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div>
+                    <div class="cardsImgTop">
                         <div>
                             <img src="img/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier">
                         </div>
-                        <h3>Auberge Le Panier</h3>
-                        <p>Nuit à partir de 23€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star empty"></i>
+                        <div>
+                            <h3>Auberge Le Panier</h3>
+                            <p>Nuit à partir de 23€</p>
+                            <div class="stars">
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star empty"></i>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div>
+                    <div class="cardsImgTop">
                         <div>
                             <img src="img/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                         </div>
-                        <h3>Hôtel chez Amina</h3>
-                        <p>Nuit à partir de 96€</p>
-                        <div class="stars">
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
-                            <i class="fa fa-star full"></i>
+                        <div>
+                            <h3>Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96€</p>
+                            <div class="stars">
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                                <i class="fa fa-star full"></i>
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
@@ -235,53 +265,70 @@
         <!------------------------------->
         <!-- Activités à Marseille ------>
         <!------------------------------->
-        <section>
+        <section class="activityCity container" id="activityCityAnchor">
 
             <div>
                 <h2>Activités à Marseille</h2>
             </div>
 
             <div>
-                <div>
+                <div class="cardsImgTop">
                     <div>
                         <img src="img/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="le vieux port">
                     </div>
-                    <h3>Vieux Port</h3>
+                    <div>
+                        <h3>Vieux Port</h3>
+                    </div>
                 </div>
 
-                <div>
+                <div class="cardsImgTop">
                     <div>
                         <img src="img/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomegues">
                     </div>
-                    <h3>Fort de Pomègues</h3>
+                    <div>
+                        <h3>Fort de Pomègues</h3>
+                    </div>
+
                 </div>
 
-                <div>
+                <div class="cardsImgTop">
                     <div>
                         <img src="img/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles du frioul">
                     </div>
-                    <h3>Iles du Frioul</h3>
+                    <div>
+                        <h3>Iles du Frioul</h3>
+                    </div>
+
                 </div>
 
-                <div>
+                <div class="cardsImgTop">
                     <div>
                         <img src="img/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des calanques">
                     </div>
-                    <h3>Parc National des Calanques</h3>
+                    <div>
+                        <h3>Parc National des Calanques</h3>
+                    </div>
+
                 </div>
 
-                <div>
+                <div class="cardsImgTop">
                     <div>
                         <img src="img/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde">
                     </div>
-                    <h3>Notre-Dame-de-la-Garde</h3>
+                    <div>
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </div>
+
                 </div>
 
-                <div>
+                <div class="cardsImgTop">
                     <div>
                         <img src="img/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamp">
                     </div>
-                    <h3>Parc Longchamp</h3>
+                    <div>
+                        <h3>Parc Longchamp</h3>
+                    </div>
+
                 </div>
 
             </div>
@@ -290,7 +337,7 @@
 
     </div>
 
-    <footer>
+    <footer class="container">
 
         <div>
             <h4>A propos</h4>
