@@ -1,10 +1,31 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  padding-left: 0.3rem;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style: none;
+}
+
+img {
+  width: 100%;
 }
 
 .container {
@@ -23,6 +44,14 @@ ul {
   .container {
     max-width: 1140px;
   }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @keyframes spin {
@@ -93,10 +122,13 @@ ul {
 }
 .findAccommodation__input {
   border: 1px solid #ece8e8;
+  width: 200px;
 }
 .findAccommodation__input::placeholder {
   font-weight: bold;
-  padding-left: 0.2rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  color: #000000;
 }
 .findAccommodation__searchButton {
   background-color: #0065fc;
@@ -147,11 +179,69 @@ ul {
   border: 10px solid #ccc;
 }
 
+.cardsImgLeft, .cardsImgTop {
+  box-shadow: 2px 2px 7px rgba(177, 177, 177, 0.4);
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+}
+.cardsImgLeft h3, .cardsImgTop h3 {
+  margin: 0.5rem 0 0 0;
+}
+.cardsImgLeft i, .cardsImgTop i {
+  font-size: 0.7rem;
+}
+.cardsImgLeft i:before, .cardsImgTop i:before {
+  color: #0065fc;
+}
+
+.cardsImgLeft {
+  display: flex;
+  background-color: white;
+  height: 160px;
+}
+.cardsImgLeft div:nth-child(1) {
+  flex-basis: 45%;
+}
+.cardsImgLeft div:nth-child(1) img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 25px 0 0 25px;
+}
+.cardsImgLeft div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 55%;
+  padding: 0 0 0.5rem 0.5rem;
+}
+.cardsImgLeft p {
+  margin: 0 0 1.5rem 0;
+}
+
+.cardsImgTop p {
+  margin: 0.5rem 0;
+}
+.cardsImgTop img {
+  object-fit: cover;
+  height: 140px;
+  border-radius: 25px 25px 0 0;
+}
+.cardsImgTop div:nth-child(2) {
+  padding: 0 0 0.5rem 1rem;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+header img {
+  padding-left: 15px;
+}
+header .signUp {
+  padding-right: 15px;
 }
 header > div {
   margin-right: auto;
@@ -165,9 +255,25 @@ header ul {
   padding: 0;
 }
 header ul li {
-  margin: 0 0.5rem;
+  padding-bottom: 1rem;
   width: 50%;
+  border-bottom: 3px solid #f2f2f2;
   text-align: center;
+}
+header ul li:hover {
+  border-bottom: 3px solid #0065fc;
+}
+header ul li a {
+  color: black;
+}
+header ul li a:hover {
+  color: #0065fc;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .signUp {
@@ -196,6 +302,31 @@ header ul li {
   color: #0065fc;
   height: max-content;
   font-size: 0.8rem;
+}
+
+.accommodationResults .mostPopular {
+  background-color: #f2f2f2;
+  padding-bottom: 1rem;
+}
+.accommodationResults .mostPopular .container div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accommodationResults .accommodationCity p:last-child {
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .accommodationResults {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 50px;
+  }
+
+  .accommodationCity {
+    grid-row: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
