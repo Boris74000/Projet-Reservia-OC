@@ -1,0 +1,66 @@
+.cardsImgLeft, .cardsImgTop {
+    box-shadow: 2px 2px 7px rgb(177 177 177 / 40%);
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+
+    h3 {
+        margin: 0.5rem 0 0 0;
+    }
+
+    i {
+        font-size: 0.7rem;
+
+        &:before {
+            color: $reservia_blue;
+        }
+
+    }
+
+}
+
+.cardsImgLeft {
+    display: flex;
+    background-color: white;
+    height: 160px;
+
+    div:nth-child(1) {
+        flex-basis: 45%;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            border-radius: 25px 0 0 25px;
+        }
+    }
+
+    div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 55%;
+        padding: 0 0 0.5rem 0.5rem;
+    }
+
+    p {
+        margin: 0 0 1.5rem 0;
+    }
+
+}
+
+.cardsImgTop {
+    p {
+        margin: 0.5rem 0;
+    }
+
+    img {
+        object-fit: cover;
+        height: 140px;
+        border-radius: 25px 25px 0 0;
+    }
+
+    div:nth-child(2) {
+        padding: 0 0 0.5rem 1rem;
+    }
+
+}

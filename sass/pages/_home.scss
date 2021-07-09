@@ -35,3 +35,42 @@
     }
 
 }
+
+//============= Résultat hébergement Marseille ================
+//=============================================================
+
+.accommodationResults {
+    //display: grid;
+
+
+    .mostPopular {
+        background-color: $reservia_light-grey;
+        padding-bottom: 1rem;
+
+        .container div:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+
+    .accommodationCity {
+        p:last-child {
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .accommodationResults {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .accommodationCity {
+        grid-row: 1;
+    }
+
+}

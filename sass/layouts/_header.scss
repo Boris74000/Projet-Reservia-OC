@@ -4,6 +4,14 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 
+    img {
+        padding-left: 15px;
+    }
+
+    .signUp {
+        padding-right: 15px;
+    }
+
     > div {
         margin-right: auto;
     }
@@ -18,9 +26,24 @@ header {
         padding: 0;
 
         li {
-            margin: 0 0.5rem;
+            padding-bottom: 1rem;
             width: 50%;
+            border-bottom: 3px solid $reservia_light-grey;
             text-align: center;
+
+            &:hover {
+                border-bottom: 3px solid $reservia_blue;
+            }
+
+            a {
+                color: black;
+
+                &:hover {
+                    color: $reservia_blue;
+                }
+            }
+
         }
+
     }
 }

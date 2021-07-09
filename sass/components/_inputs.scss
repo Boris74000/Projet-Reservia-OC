@@ -13,10 +13,13 @@
 
     &__input {
         border: 1px solid #ece8e8;
+        width: 200px;
 
         &::placeholder {
             font-weight: bold;
-            padding-left: 0.2rem;
+            padding-left: 0.5rem;
+            font-size: 1rem;
+            color: $reservia_black;
         }
     }
 
